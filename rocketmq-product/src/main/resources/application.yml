@@ -1,0 +1,14 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 9096
+
+# 应用名称
+spring:
+  application:
+    name: rocketmq-product
+# rocketmq nameserver地址 多个用,隔开
+rocketmq:
+  name-server: 192.168.175.131:9876
+  producer:
+    group: product-group
+    topic: test-topic
